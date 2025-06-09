@@ -29,7 +29,7 @@ public class BaseAPI {
     public void testInvalidNetwork() {
         given()
                 .when()
-                .get("/networks/fakenet/pools")
+                .get("/networks/test/pools")
                 .then()
                 .statusCode(404)
                 .body("error", containsString("not found"));
